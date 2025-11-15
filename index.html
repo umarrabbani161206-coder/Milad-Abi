@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Abiiii 🎉</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffd8e8, #d6f0ff);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* --- Floating Balloons --- */
+    .balloon {
+      position: absolute;
+      width: 70px;
+      height: 90px;
+      border-radius: 50% 50% 45% 45%;
+      animation: fly 6s ease-in-out infinite;
+      opacity: 0.85;
+    }
+
+    @keyframes fly {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-35px); }
+      100% { transform: translateY(0); }
+    }
+
+    .b1 { background: #ff82c1; left: 5%; top: 20%; animation-delay: 0s; }
+    .b2 { background: #fcd34d; right: 8%; top: 35%; animation-delay: .7s; }
+    .b3 { background: #8ef9cc; left: 12%; bottom: 20%; animation-delay: 1.3s; }
+    .b4 { background: #9ad0ff; right: 12%; bottom: 10%; animation-delay: 2s; }
+
+    /* --- Card Box --- */
+    .card {
+      width: 90%;
+      max-width: 700px;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(12px);
+      border-radius: 28px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      z-index: 10;
+      border: 2px solid rgba(255,255,255,0.7);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      background: linear-gradient(45deg, #ff5e9c, #ff93c9);
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 1rem;
+      margin-bottom: 25px;
+    }
+
+    /* --- Foto Frame --- */
+    .photo-container {
+      width: 180px;
+      height: 180px;
+      background: #ffe9f4;
+      border-radius: 22px;
+      border: 3px dashed #ffb3d9;
+      margin: 0 auto 25px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 4px 14px rgba(255,135,185,0.25);
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .emoji {
+      font-size: 2rem;
+      margin: 15px 0;
+    }
+
+    .message {
+      background: #fff6fb;
+      padding: 20px;
+      border-radius: 18px;
+      border: 2px dashed #ffc1e3;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Balloons -->
+  <div class="balloon b1"></div>
+  <div class="balloon b2"></div>
+  <div class="balloon b3"></div>
+  <div class="balloon b4"></div>
+
+  <!-- Birthday Card -->
+  <div class="card">
+    <h1>Happy Birthday Abi Tercintaa 🎉</h1>
+    <p class="subtitle">Hari istimewa untuk pria paling hebat di dunia 💖</p>
+
+    <!-- Foto Ayah -->
+    <div class="photo-container">
+      <img src="abi.jpeg" alt="Foto Ayah" />
+    </div>
+
+    <div class="emoji">🎂 🥳 🎁 🎈</div>
+
+    <div class="message">
+      Abi tersayang, terima kasih sudah menjadi pahlawan, pelindung, dan sumber
+      kekuatan keluarga. Semoga Abi diberi kesehatan, kebahagiaan, dan umur
+      panjang. Kami sangat sayang Abi! 💗
+      <br><br>
+      — Dari keluarga yang selalu bangga padamu 💕
+    </div>
+  </div>
+
+</body>
+</html>
